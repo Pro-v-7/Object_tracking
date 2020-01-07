@@ -213,12 +213,13 @@ while True:
 	print(bounded)
 	print(d_id)
 	print(not_seen)
-	for obj_id, obj in d_id.items():
+	for obj_id, obj in range(0):
 		if not seen[obj_id]:
 			not_seen[obj_id]+=1
 			print("incremented for",obj_id,not_seen[obj_id])
 			if(not_seen[obj_id]==15):
 				print("deleted")
+				break
 				del seen[obj_id]
 				del not_seen[obj_id]
 				del d_id[obj_id]
